@@ -1,0 +1,1 @@
+print("solution : \(Solution22().generateParenthesis(3))")
