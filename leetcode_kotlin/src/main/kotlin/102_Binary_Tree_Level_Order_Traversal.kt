@@ -1,30 +1,16 @@
 package main.kotlin
 
-class TreeNode(var `val`: Int) {
-    var left: TreeNode? = null
-    var right: TreeNode? = null
-}
-
 class Solution102 {
-    fun levelOrder(root: TreeNode?): List<List<Int>> {
-        val result = mutableListOf<MutableList<Int>>()
-        if (root != null) {
-            insertValues(result, root, 0)
+    fun levelOrder(root: TreeNode?): List<List<Int>> =
+        mutableListOf<MutableList<Int>>().apply {
+            addNodeValuesByLevel(root, 0)
         }
-        return result
-    }
 
-    private fun insertValues(result: MutableList<MutableList<Int>>, node: TreeNode, level: Int) {
-        if (result.size <= level) {
-            result.add(mutableListOf(node.`val`))
-        } else {
-            result[level].add(node.`val`)
-        }
-        node.left?.let {
-            insertValues(result, it, level + 1)
-        }
-        node.right?.let {
-            insertValues(result, it, level + 1)
-        }
+    private fun MutableList<MutableList<Int>>.addNodeValuesByLevel(node: TreeNode?, level: Int) {
+        if (node == null) return
+        val currentLevelList = getOrNull(level) ?: mutableListOf<Int>().also { add(it) }
+        currentLevelList.add(node.`val`)
+        addNodeValuesByLevel(node.left, level + 1)
+        addNodeValuesByLevel(node.right, level + 1)
     }
 }
