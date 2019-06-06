@@ -1,4 +1,3 @@
-import main.kotlin.Solution283
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 

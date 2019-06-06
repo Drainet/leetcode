@@ -1,5 +1,3 @@
-package main.kotlin
-
 class Solution283 {
     fun moveZeroes(nums: IntArray) {
         var zeroStartIndex = 0
