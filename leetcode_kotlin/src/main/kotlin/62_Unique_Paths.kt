@@ -1,13 +1,14 @@
 class Solution62 {
-    private val resultMap = mutableMapOf<Pair<Int, Int>, Int>()
     fun uniquePaths(m: Int, n: Int): Int {
         if (m == 1 || n == 1) return 1
-        val pair = if (m > n) Pair(m, n) else Pair(n, m)
-        resultMap[pair]?.let { result ->
-            return result
+        val resultRow = IntArray(n) { 1 }
+        for (i in 1 until m) {
+            for (j in 1 until n) {
+                resultRow[j] =
+                    if (j == 1) resultRow[j] + 1
+                    else resultRow[j] + resultRow[j - 1]
+            }
         }
-        val result = uniquePaths(m - 1, n) + uniquePaths(m, n - 1)
-        resultMap[pair] = result
-        return result
+        return resultRow.last()
     }
 }
