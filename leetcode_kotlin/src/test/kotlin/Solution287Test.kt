@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Solution287Tests {
+class Solution287Test {
 
     @Test
     fun test1() {
@@ -14,6 +14,5 @@ class Solution287Tests {
         val result = Solution287().findDuplicate(intArrayOf(3, 1, 3, 4, 2))
         assertEquals(3, result)
     }
-
 
 }

@@ -2,7 +2,7 @@ import main.kotlin.Solution96
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Solution96Tests {
+class Solution96Test {
 
     @Test
     fun test1and2() {

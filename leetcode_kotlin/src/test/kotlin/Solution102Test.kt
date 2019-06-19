@@ -3,7 +3,7 @@ import main.kotlin.TreeNode
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Solution102Tests {
+class Solution102Test {
 
     @Test
     fun test1() {

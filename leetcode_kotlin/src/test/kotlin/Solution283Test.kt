@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
-class Solution283Tests {
+class Solution283Test {
 
     @Test
     fun test1() {

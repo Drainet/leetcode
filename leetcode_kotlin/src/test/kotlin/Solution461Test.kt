@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class Solution461Tests {
+class Solution461Test {
 
     @Test
     fun test1() {
