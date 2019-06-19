@@ -8,4 +8,10 @@ class Solution53Test {
         val result = Solution53().maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))
         assertEquals(6, result)
     }
+
+    @Test
+    fun testJava() {
+        val result = Solution53J().maxSubArray(intArrayOf(-2, 1, -3, 4, -1, 2, 1, -5, 4))
+        assertEquals(6, result)
+    }
 }
