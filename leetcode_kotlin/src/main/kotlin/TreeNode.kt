@@ -1,5 +1,3 @@
-package main.kotlin
-
 class TreeNode(var `val`: Int) {
     var left: TreeNode? = null
     var right: TreeNode? = null
@@ -20,6 +18,6 @@ class TreeNode(var `val`: Int) {
     }
 
     override fun toString(): String {
-        return "TreeNode($`val`) { left = ${left.toString()} right = ${right.toString() }} \n"
+        return "TreeNode($`val`) { left = ${left.toString()} right = ${right.toString()}} \n"
     }
 }

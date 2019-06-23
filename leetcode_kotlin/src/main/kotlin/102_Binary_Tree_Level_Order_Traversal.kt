@@ -1,5 +1,3 @@
-package main.kotlin
-
 class Solution102 {
     fun levelOrder(root: TreeNode?): List<List<Int>> =
         mutableListOf<MutableList<Int>>().apply {

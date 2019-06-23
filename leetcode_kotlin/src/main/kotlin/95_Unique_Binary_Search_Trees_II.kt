@@ -1,5 +1,3 @@
-package main.kotlin
-
 class Solution95 {
 
     fun generateTrees(n: Int): List<TreeNode?> {

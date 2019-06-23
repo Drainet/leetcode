@@ -1,5 +1,3 @@
-package main.kotlin
-
 class Solution39 {
     fun combinationSum(candidates: IntArray, target: Int): List<List<Int>> =
         mutableListOf<List<Int>>().apply {
